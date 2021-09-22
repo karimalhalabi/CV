@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: waar;
     src: url("/css/font/Arabic.ttf");
-}
+} */
 
 :root {
     position: absolute;
@@ -12,8 +12,8 @@
 }
 
 *{
-    font-family: waar;
-    font-size: 14px;
+    /* font-family: waar; */
+    font-size: 2.4vmin;
     color:gold;
     padding:0px;
     margin: 0px;
@@ -28,12 +28,12 @@ body{
     background-color: lightblue;
 }
 
-.stagger-visualizer {
+.stagger-visualizer{
     position: absolute;
-    top: 2px;
-    right:2px;
-    left: 2px;
-    bottom: 2px;
+    top:0px;
+    right:0px;
+    left: 0px;
+    bottom: 0px;
     margin: 0px;
     display: grid;
     overflow: hidden;
@@ -42,32 +42,32 @@ body{
     place-items: center;
     background-clip: border-box;
     background-color: rgba(112, 200, 255, 0.7);
-    box-shadow: inset 2px 2px 2px 2px rgba(30, 30, 50, 0.8),-2px -2px 2px 2px rgba(30, 30, 50, 0.8);
-    border: 10px rgb(12, 77, 162) solid;
+    box-shadow: inset 1px 1px 2px 2px rgba(30, 30, 50, 0.8),inset -1px -1px 2px 2px rgba(30, 30, 50, 0.8);
+    border: 2vmin rgb(12, 77, 162) solid;
 }
 
 .box {
     position: absolute;
     display: block;
-    width:20px;
-    height:20px;
+    width:4vmin;
+    height:4vmin;
     background-color: rgba(20, 20, 255, 0.7);
-    box-shadow: 0px 0px 5px 5px rgba(0, 20, 50, 0.8);
+    box-shadow: 0px 0px 2px 3px rgba(0, 20, 50, 0.8);
     border: 2px gold solid;
     text-align: center;
 }
 
 .picArt,.art{
     position: absolute;
-    top:50px;
+    top:5vmin;
     display: grid;
     overflow: hidden;
     justify-content: center;
     align-content: center;
     place-items: center;
     margin: auto;
-    height: 400px;
-    padding:5%;
+    height: 35vmax;
+    padding:3vmin;
     box-shadow: 2px 2px 2px 2px rgba(30, 30, 50, 0.7), -2px -2px 2px 2px rgba(30, 30, 50, 0.7);
     background-color: rgba(20, 20, 255, 0.9);
     border: 2px rgb(255, 255, 255) solid;
@@ -76,19 +76,21 @@ body{
     opacity: 0;
  }
 .art{
-    left:65%;
+    left:65vmax;
 }
 .artDownLeft{
-    left: 50px;
-    width:400px;
+    width:35vmax;
+    height:35vmax;
     right:unset;
+    left:8vmin;
     transform: translateY(0) scale(1);
     border-radius: 50%;
     opacity: 1;
 }
 .art:target,.artDownRight{
-    right: 50px;
-    width:500px;
+    right: 8vmin;
+    width: 46vmax;
+    min-height: 82vmin;
     left:unset;
     transform: translateY(0) scale(1);
     opacity: 1;
@@ -98,8 +100,8 @@ body{
 .artcontent{
     position: absolute;
     text-align: center;
-    padding:12%;
-    margin:3.5% ;
+    padding:12vmin;
+    margin:3.5vmin ;
     text-overflow: clip;
 }
 .picArt .artcontent{
@@ -112,23 +114,23 @@ body{
 }
 .picArt img{
     background-color: goldenrod;
-    padding:10%;
+    padding:10vmin;
     margin:0;
     border-radius: 50%;
     overflow:hidden;
-    max-height:350px;
-    max-width: 350px;
-    min-height:350px;
-    min-width: 350px;
+    max-height:31vmax;
+    max-width: 31vmax;
+    min-height:31vmax;
+    min-width: 31vmax;
 }
 
 p{
     position: relative;
-    width:90%;
+    width:90vmax;
     margin:0px auto;
-    text-align: right;
+    text-align: left;
     color: rgb(247, 220, 154);
-    font-size: 2vh ;
+    font-size: 1vmin ;
     text-justify: distribute;
 }
 
@@ -153,27 +155,30 @@ ul{
     bottom:0px ;
     left:0px;
     right:0px;
-    height:78px;
+    height:12.5vmin;
+    margin-top: 0px;
     text-align: center;
 
 }
 
 .rightArrow, .leftArrow{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 64px;
+  font-size: 5vmax;
   font-weight: 600;
   color:blue;
   cursor: pointer;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .rightArrow{
   float: right;
-  margin-right:100px;
+  margin-right:8vmax;
 }
 
 .leftArrow{
     float: left;
-    margin-left:100px;
+    margin-left:8vmax;
  
 }
 .period{
